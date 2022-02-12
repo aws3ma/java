@@ -1,4 +1,4 @@
-package TP.Ex3;
+package TP.tp1.Ex3;
 
 class Ex3{
 	public static void main (String[] args){

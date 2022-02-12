@@ -1,4 +1,4 @@
-package cours.ex1;
+package cours.td1.ex1;
 
 import java.util.Scanner;
 
