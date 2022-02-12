@@ -1,15 +1,20 @@
+package TP.Ex3;
+
 class Ex3{
 	public static void main (String[] args){
 		try{
 		if(args.length>0){
-			int a=Integer.parseInt(args[1]);
-			int b=Integer.parseInt(args[2]);
+			for(int i=0;i<args.length;i++)
+				System.out.println(args[i]);
+			int a=Character.getNumericValue(args[0].charAt(0));
+			int b=Character.getNumericValue(args[0].charAt(2));
 			boolean test=true;
-			switch(args[0]){
-				case "+" : a=a+b;break;
-				case "-" : a=a-b;break;
-				case "x" : a=a*b;break;
-				case "/" : a=a/b;break;
+			switch(args[0].charAt(1)){
+				case '+' : a=a+b;break;
+				case '-' : a=a-b;break;
+				case '*' : a=a*b;break;
+				case 'x' : a=a*b;break;
+				case '/' : a=a/b;break;
 				default : test=false;
 			}
 			if(test)
