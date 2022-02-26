@@ -18,8 +18,8 @@ public class Participant {
     }
 
     public void afficher() {
-        System.out.println("Nom : " + nom);
         if (Form != null) {
+            System.out.println("Nom : " + nom);
             Form.afficher();
         } else
             System.out.println("Pas de formation accordée");
