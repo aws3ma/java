@@ -1,6 +1,5 @@
 package cours.td2.ex2;
 
-import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,10 +24,10 @@ public class Test {
         s1.affecterEmp(e4);
         s2.eliminerEmp(e4);
         s2.affecterEmp(e2);
-        e2.augmenterSalaire(0.35f);
+        e2.augmenterSalaire(1.35f);
         s2.setChef(e2);
-        s1.augmenterSalaire(0.06f);
-        s2.augmenterSalaire(0.06f);
+        s1.augmenterSalaire(1.06f);
+        s2.augmenterSalaire(1.06f);
         s1.afficher();
         s2.afficher();
     }
