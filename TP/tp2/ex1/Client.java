@@ -50,10 +50,14 @@ public class Client {
     }
 
     public void affiche() {
+        float sum=0;
         System.out.println(nom + " " + prenom + "\nnombre des compte: " + nbrComptes);
         for (int i = 0; i < nbrComptes; i++) {
+
             comptes[i].afficher();
+            sum+=comptes[i].getSolde();
         }
+        System.out.println("Total\t"+sum);
     }
 
     public boolean verif(String num) {
