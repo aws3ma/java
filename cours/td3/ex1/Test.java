@@ -20,16 +20,13 @@ public class Test {
         // }
         for (Employe employe : l) {
             if (employe instanceof Vacataire) {
-                Vacataire v= (Vacataire)employe;
-                v.setPrixHeure(4.1f);
+                ((Vacataire)employe).setPrixHeure(4.1f);
             }
             if (employe instanceof Permanent) {
-                Permanent v= (Permanent)employe;
-                v.setPrime(230);
+                ((Permanent)employe).setPrime(230);
             }
             if (employe instanceof Contractuel) {
-                Contractuel v= (Contractuel)employe;
-                v.setSalaireBase(1000);
+                ((Contractuel)employe).setSalaireBase(1000);
             }
         }
         for (Employe employe : l) {
