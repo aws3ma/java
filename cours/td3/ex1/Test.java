@@ -1,4 +1,4 @@
-package cours.td3;
+package cours.td3.ex1;
 
 import java.util.ArrayList;
 import java.util.List;

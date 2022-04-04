@@ -1,4 +1,4 @@
-package cours.td3;
+package cours.td3.ex1;
 
 public class Permanent extends Contractuel{
     private float prime;
