@@ -19,16 +19,20 @@ public class Test {
         //     }
         // }
         for (Employe employe : l) {
+            System.out.println(employe.toString());
+        }
+        for (Employe employe : l) {
             if (employe instanceof Vacataire) {
                 ((Vacataire)employe).setPrixHeure(4.1f);
             }
             if (employe instanceof Permanent) {
                 ((Permanent)employe).setPrime(230);
             }
-            if (employe instanceof Contractuel) {
+            if (employe instanceof Contractuel && !(employe instanceof Permanent)) {
                 ((Contractuel)employe).setSalaireBase(1000);
             }
         }
+        System.out.println("============apres question 2C============");
         for (Employe employe : l) {
             System.out.println(employe.toString());
         }

@@ -1,7 +1,7 @@
 package cours.td3.ex1;
 
 public class Employe {
-    private static int matricule=1001;
+    private static int matricule=1000;
     private int matriculeEmp;
     private String nom;
     protected float salaire;
