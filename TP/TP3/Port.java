@@ -60,6 +60,7 @@ public class Port {
                 if(barque.getNum().equals(num)){
                     listBarque.remove(barque);
                     nbBarque--;
+                    break;
                 }
             }
             
