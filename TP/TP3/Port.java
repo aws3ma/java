@@ -54,6 +54,19 @@ public class Port {
             System.out.println("Barque n'est pas disponible");
         }
     }
+    public void suppBarque(String num) {
+        if (nbBarque>0) {
+            for (Barque barque : listBarque) {
+                if(barque.getNum().equals(num)){
+                    listBarque.remove(barque);
+                    nbBarque--;
+                }
+            }
+            
+        } else {
+            System.out.println("Barque n'est pas disponible");
+        }
+    }
 
     public float calculerTaxe(Barque b) {
         if (b instanceof BarqueMoteur) {
