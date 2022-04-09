@@ -2,7 +2,7 @@ package TP.TP3;
 
 public class BarqueMoteur extends Barque{
     private int puissance;
-    public BarqueMoteur(String nom, int num, int puissance) {
+    public BarqueMoteur(String nom, String num, int puissance) {
         super(nom, num);
         this.puissance = puissance;
     }

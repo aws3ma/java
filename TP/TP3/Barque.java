@@ -2,8 +2,8 @@ package TP.TP3;
 
 public class Barque {
     private String nom;
-    private int num;
-    public Barque(String nom, int num) {
+    private String num;
+    public Barque(String nom, String num) {
         this.nom = nom;
         this.num = num;
     }
@@ -11,7 +11,7 @@ public class Barque {
     public String toString() {
         return "Nom : "+nom+"\nNumero d'autorisation : "+num;
     }
-    public int getNum() {
+    public String getNum() {
         return num;
     }
 }
