@@ -12,23 +12,18 @@ public class Test {
         l.add(salah);
         Employe mohamed = new Permanent("MOHAMED", 1100, 150);
         l.add(mohamed);
-        // l.get(0)
-        // for (int i = 0; i < l.size(); i++) {
-        //     if (l.get(i) instanceof Vacataire) {
-                
-        //     }
-        // }
+        
         for (Employe employe : l) {
             System.out.println(employe.toString());
         }
         for (Employe employe : l) {
             if (employe instanceof Vacataire) {
                 ((Vacataire)employe).setPrixHeure(4.1f);
-            }
+            }else
             if (employe instanceof Permanent) {
                 ((Permanent)employe).setPrime(230);
-            }
-            if (employe instanceof Contractuel && !(employe instanceof Permanent)) {
+            }else
+            if (employe instanceof Contractuel) {
                 ((Contractuel)employe).setSalaireBase(1000);
             }
         }

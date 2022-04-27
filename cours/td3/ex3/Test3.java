@@ -9,12 +9,12 @@ public class Test3 {
         System.out.println(dep.getNom());
         System.out.println("Liste des personnes : ");
         for (int i = 0; i < dep.getTabPersonnes().length; i++) {
-            System.out.println("\t"+dep.getTabPersonnes()[i].getNom()+",\t"+dep.getTabPersonnes()[i].getPrenom());
+            System.out.println("\t"+dep.getTabPersonnes()[i].getNom()+"\t"+dep.getTabPersonnes()[i].getPrenom());
             if (dep.getTabPersonnes()[i] instanceof Etudiant) {
-                System.out.println(",\t"+((Etudiant)dep.getTabPersonnes()[i]).getMatricule());
+                System.out.println("\t"+((Etudiant)dep.getTabPersonnes()[i]).getMatricule());
             }else
             {
-                System.out.println(",\t"+((Enseignant)dep.getTabPersonnes()[i]).getGrade());
+                System.out.println("\t"+((Enseignant)dep.getTabPersonnes()[i]).getGrade());
             }
         }
     }

@@ -90,6 +90,10 @@ public class Port {
 
     @Override
     public String toString() {
-        return "Nom : " + nom + "\nCapacite : " + capacite + "\nTotal taxe : " + recetteTaxeAujour();
+        String ch="Nom : " + nom + "\nCapacite : " + capacite + "\nTotal taxe : " + recetteTaxeAujour()+"\nNombre de barque : "+nbBarque+"\nLes barques : \n";
+        for (Barque barque : listBarque) {
+            ch+=barque+"\n";
+        }
+        return ch;
     }
 }
